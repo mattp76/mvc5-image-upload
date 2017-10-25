@@ -166,7 +166,7 @@ namespace jQuery_File_Upload.MVC5.Helpers
                     {
                         var ThumbfullPath = Path.Combine(pathOnServer, "thumbs");
                         //String fileThumb = file.FileName + ".80x80.jpg";
-                        String fileThumb = Path.GetFileNameWithoutExtension(file.FileName) + "80x80.jpg";
+                        String fileThumb = Path.GetFileNameWithoutExtension(fileName) + "80x80.jpg";
                         var thumbNameWithoutExtension = Path.GetFileNameWithoutExtension(fileThumb);
                         using (MemoryStream stream = new MemoryStream(System.IO.File.ReadAllBytes(fullPath)))
                         {
